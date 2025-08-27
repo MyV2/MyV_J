@@ -63,4 +63,4 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             docker load < app.tar
-            docker run -d --name ${{ secrets.PROJECT_NAME }} -p 80:8080 ${{ secrets.PROJECT_NAME }}
+            docker run -d --name ${{ secrets.PROJECT_NAME }} -p 8080:8080 ${{ secrets.PROJECT_NAME }}
